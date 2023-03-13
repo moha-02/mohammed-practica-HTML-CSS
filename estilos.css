@@ -1,0 +1,246 @@
+/* FORMULARIO RECICLADO DE EJERICIO ANTERIOR */
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: 
+    rgb(17, 182, 182);
+    box-shadow: 7px 13px 37px #274c7d;
+}
+  
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+  
+.controls {
+    width: 100%;
+    background: #388f9e7c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #6e00ec;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(250, 247, 247);
+}
+  
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+  
+.form-register a {
+    color: rgb(0, 63, 236);
+    text-decoration: none;
+}
+  
+.form-register a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+  
+.form-register .botons {
+    width: 100%;
+    background: #09597e;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-align: center;
+}
+ 
+  /*FORMATO PARA EL HEADER*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/* MENU LATERAL */
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(95, 194, 171, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #07a8de;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #330404;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* LOS DIFERENTES AJUSTES AL BODY EN GENERAL PARA QUE SE VEA IGUAL EN TODOS LOS ARCHIVOS HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    min-width: 400px;
+}
+
+body{
+    background-size: 100vw 100vh;
+    background-image: url('cochedrift.jpg');
+}
+body > header {
+    width: 100%;
+    background-color: #00b7ff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+}
+
+body > header h1 {
+    color: #ffffff;
+}
+
+body > footer {
+    border-top: 1px solid #000;
+    opacity: 0.4;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+body > footer a {
+    text-decoration: none;
+}
+/* LE DA EL COLOR Y FORMA A  LA TABLA ZEBREADA */
+.tabla{
+    background-color: #00ffff;
+    text-align: left;
+    padding: 8px;
+}
+.tabla1{
+    background-color: #ff6200;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabla3{
+    background-color: #00ff00;
+    text-align: left;
+    padding: 8px;
+}
+
+table{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 80%;
+    
+}
+
+/*  PERMITE ENCUADRAR LAS IMAGENES DE LA GALERIA CON EL OBJECT-FIT */
+.parent {
+    display: flex;
+}
+.item {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background: lightgrey;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
