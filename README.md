@@ -1,6 +1,6 @@
 # mohammed-practica-HTML-CSS
 
-## Objecctius
+## Objectius
 
 Realitzar un site web (conjunt de pàgines web relacionades).
 
