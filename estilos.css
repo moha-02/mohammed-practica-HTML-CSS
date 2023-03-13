@@ -258,3 +258,8 @@ img {
       display: none;
     }
 }
+/*HACE QUE TODOS LOS TEXTOS DE PARAGRAFO SEAN BLANCOS*/
+p{
+    color: white;
+
+}
