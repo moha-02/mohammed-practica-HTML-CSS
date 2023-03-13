@@ -244,3 +244,12 @@ img {
     height: 100%;
     object-fit: fill;
 }
+
+/* MEDIA QUERY PARA OCULTAR MOVER EL MENU GENERAL EN DISPOSITIVOS ESTRETCHOS */
+
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+@media (min-width: 576px) {
+    .ocultar {
+      display: none;
+    }
+  }
